@@ -68,14 +68,36 @@ background-color: #b5235e;
 }
 
 #computer-hand-display {
-  color:#b5235e;
+  color:#e3060a;
   font-family:courier;
   font-size: 33px;
   text-decoration: underline;
 }
 #computer-hand-display:hover {
   color: red;
-  font-size: 60px;
+  font-size: 40px;
+  font-weight: 800;
+  cursor: help;
+}
+#user-hand-display {
+  color:#0fe6bf;
+  font-family:courier;
+  font-size: 33px;
+}
+#user-hand-display:hover {
+  color: rgb(0, 251, 255);
+  font-size: 40px;
+  font-weight: 800;
+  cursor: help;
+}
+#final-result {
+  color:#c024ef;
+  font-family:courier;
+  font-size: 33px;
+}
+#final-result:hover {
+  color: rgb(247, 0, 255);
+  font-size: 40px;
   font-weight: 800;
   cursor: help;
 }

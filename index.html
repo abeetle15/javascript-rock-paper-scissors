@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="javascript.js"></script>
   <link rel="stylesheet" href="style.css">
   <title>Piedra, papel o Tijeras</title>
 </head>
@@ -18,120 +17,28 @@
       <button class="consent-button" 
       onclick="alert('sigue bajo tu propio riesgo...')">si</button>
       <button class="consent-button" 
-      onclick="alert('jaja, cobarde\nes mejor que cierres la página gallinita')">no</button>
+      onclick="alert('jaja, cobarde\nes mejor que cierres la página, gallinita')">no</button>
     </div>
   </div>  
 
   <h3>tu perdición, entonces elije:</h3>
 
   <div class="buttons ppj">
-    <button class="ppj-button" 
-    onclick="console.log(userHand = 'piedra');
-    
-    console.log(computerHandValue = Math.random());
-    
-    if (computerHandValue < 0.33) {
-      console.log(computerHand = 'piedra')} 
-    else if (computerHandValue < 0.66) {
-      console.log(computerHand = 'papel')}
-    else {
-      console.log(computerHand = 'tijeras')};
-    
-    if (userHand == computerHand) {
-      alert(`hmm, empate\nambos elegimos ${computerHand}`)
-    }
-    else if (userHand == 'piedra' && computerHand == 'papel') {
-      alert(`muajajajajaja perdiiisteee\nera obvio que ibas a elegir ${userHand} y elegí ${computerHand}`)
-    }
-    else if (userHand == 'piedra' && computerHand == 'tijeras') {
-      alert(`humano: ${userHand}\ncomputadora: ${computerHand}\npura suerte`)
-    }
-    else if (userHand == 'papel' && computerHand == 'tijeras') {
-      alert(`muajajajajaja perdiiisteeeeeee\nera obvio que ibas a elegir ${userHand} y elegí ${computerHand}`)
-    }
-    else if (userHand == 'papel' && computerHand == 'piedra') {
-      alert(`humano: ${userHand}\ncomputadora: ${computerHand}\npura suerte`)
-    }
-    else if (userHand == 'tijeras' && computerHand == 'piedra') {
-      alert(`muajajajajaja perdiiisteeeeeee\nera obvio que ibas a elegir ${userHand} y elegí ${computerHand}`)
-    }
-    else if (userHand == 'tijeras' && computerHand == 'papel') {
-      alert(`humano: ${userHand}\ncomputadora: ${computerHand}\npura suerte`)
-    }
-    ">piedra</button>
+    <button class="ppj-button" id="piedra-btn">piedra</button>
 
-    <button class="ppj-button" 
-    onclick="console.log(userHand = 'papel');
-    
-    console.log(computerHandValue = Math.random());
-    
-    if (computerHandValue < 0.33) {
-      console.log(computerHand = 'piedra')} 
-    else if (computerHandValue < 0.66) {
-      console.log(computerHand = 'papel')}
-    else {
-      console.log(computerHand = 'tijeras')}
-    
-      if (userHand == computerHand) {
-      alert(`hmm, empate\nambos elegimos ${computerHand}`)
-    }
-    else if (userHand == 'piedra' && computerHand == 'papel') {
-      alert(`muajajajajaja perdiiisteee\nera obvio que ibas a elegir ${userHand} y elegí ${computerHand}`)
-    }
-    else if (userHand == 'piedra' && computerHand == 'tijeras') {
-      alert(`humano: ${userHand}\ncomputadora: ${computerHand}\npura suerte`)
-    }
-    else if (userHand == 'papel' && computerHand == 'tijeras') {
-      alert(`muajajajajaja perdiiisteeeeeee\nera obvio que ibas a elegir ${userHand} y elegí ${computerHand}`)
-    }
-    else if (userHand == 'papel' && computerHand == 'piedra') {
-      alert(`humano: ${userHand}\ncomputadora: ${computerHand}\npura suerte`)
-    }
-    else if (userHand == 'tijeras' && computerHand == 'piedra') {
-      alert(`muajajajajaja perdiiisteeeeeee\nera obvio que ibas a elegir ${userHand} y elegí ${computerHand}`)
-    }
-    else if (userHand == 'tijeras' && computerHand == 'papel') {
-      alert(`humano: ${userHand}\ncomputadora: ${computerHand}\npura suerte`)
-    }
-    ">papel</button>
+    <button class="ppj-button" id="papel-btn">papel</button>
   
-    <button class="ppj-button" 
-    onclick="console.log(userHand = 'tijeras');
-    
-    console.log(computerHandValue = Math.random());
-    
-    if (computerHandValue < 0.33) {
-      console.log(computerHand = 'piedra')} 
-    else if (computerHandValue < 0.66) {
-      console.log(computerHand = 'papel')}
-    else {
-      console.log(computerHand = 'tijeras')}
-
-      if (userHand == computerHand) {
-      alert(`hmm, empate\nambos elegimos ${computerHand}`)
-    }
-    else if (userHand == 'piedra' && computerHand == 'papel') {
-      alert(`muajajajajaja perdiiisteee\nera obvio que ibas a elegir ${userHand} y elegí ${computerHand}`)
-    }
-    else if (userHand == 'piedra' && computerHand == 'tijeras') {
-      alert(`humano: ${userHand}\ncomputadora: ${computerHand}\npura suerte`)
-    }
-    else if (userHand == 'papel' && computerHand == 'tijeras') {
-      alert(`muajajajajaja perdiiisteeeeeee\nera obvio que ibas a elegir ${userHand} y elegí ${computerHand}`)
-    }
-    else if (userHand == 'papel' && computerHand == 'piedra') {
-      alert(`humano: ${userHand}\ncomputadora: ${computerHand}\npura suerte`)
-    }
-    else if (userHand == 'tijeras' && computerHand == 'piedra') {
-      alert(`muajajajajaja perdiiisteeeeeee\nera obvio que ibas a elegir ${userHand} y elegí ${computerHand}`)
-    }
-    else if (userHand == 'tijeras' && computerHand == 'papel') {
-      alert(`humano: ${userHand}\ncomputadora: ${computerHand}\npura suerte`)
-    }
-    ">tijeras</button>
+    <button class="ppj-button" id="tijeras-btn">tijeras</button>
   </div>
 
-  <p id="computer-hand-display">lA CuMpUtAdOrA EsPeRa Tu ElEcCiÓn</p>
+  <div id="result-display">
+    <p id="user-hand-display"></p>
+    <p id="computer-hand-display">tHe CoMpUtEr AwAiTs YoUr ChOiCe</p>
+    <p id="final-result"></p>
+  </div>
+
+  
 
 </body>
+<script src="javascript.js"></script>
 </html>
