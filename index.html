@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="javascript.js"></script>
   <link rel="stylesheet" href="style.css">
   <title>Piedra, papel o Tijeras</title>
 </head>
@@ -25,29 +24,21 @@
   <h3>tu perdición, entonces elije:</h3>
 
   <div class="buttons ppj">
-    <button class="ppj-button" 
-    onclick="
-    console.log(userHand = 'piedra');
-    computerHandPicker();
-    computerVsHuman();
-    ">piedra</button>
+    <button class="ppj-button" id="piedra-btn">piedra</button>
 
-    <button class="ppj-button" 
-    onclick="
-    console.log(userHand = 'papel');
-    computerHandPicker();
-    computerVsHuman();
-    ">papel</button>
+    <button class="ppj-button" id="papel-btn">papel</button>
   
-    <button class="ppj-button" 
-    onclick="
-    console.log(userHand = 'tijeras');    
-    computerHandPicker();
-    computerVsHuman();
-    ">tijeras</button>
+    <button class="ppj-button" id="tijeras-btn">tijeras</button>
   </div>
 
-  <p id="computer-hand-display">tHe CoMpUtEr AwAiTs YoUr ChOiCe</p>
+  <div id="result-display">
+    <p id="user-hand-display"></p>
+    <p id="computer-hand-display">tHe CoMpUtEr AwAiTs YoUr ChOiCe</p>
+    <p id="final-result"></p>
+  </div>
+
+  
 
 </body>
+<script src="javascript.js"></script>
 </html>
